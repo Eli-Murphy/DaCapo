@@ -2,9 +2,14 @@ import csv
 from xml.dom.minicompat import NodeList
 import networkx as nx
 import matplotlib.pyplot as plt
-
+import os 
 G = nx.DiGraph()
-with open(r"C:\Users\emurphy24\Documents\GitHub\DaCapo\PARK17 Interactions.csv", "r") as csv:
+
+os.chdir(r"C:\Users\elija\Documents\GitHub\DaCapo")
+
+file = input("Input CSV Filename (include .csv): ")
+
+with open(file, "r") as csv:
     next(csv)
     data = csv.readlines()
     #data = list(csv.reader(csv, delimiter=","))
