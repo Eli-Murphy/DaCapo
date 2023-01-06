@@ -73,8 +73,12 @@ trace2=go.Scatter3d(x=Xn, y=Yn, z=Zn, mode='markers', name='actors',
                    marker=dict(symbol='circle', size=6, color=group, colorscale='Viridis', 
                       line=dict(color='rgb(50,50,50)', width=0.5)), text=labels, hoverinfo='text')
 
-trace3 = go.Scatter3d(x=[Xn[0], Xn[1]], y=[Yn[0], Yn[1]], z=[Zn[0], Zn[1]],mode='markers+text',marker=dict(size=6, color='#00b3b3', symbol='diamond', line=dict(color='#00b3b3', width=10)))
+etext = [f'weight={w}' for w in edge_weights]
 
+trace3 = go.Scatter3d(x=xtp, y=ytp, z=ztp,
+                      mode='markers',
+                      marker =dict(color='rgb(125,125,125)', size=1), #set the same color as for the edge lines
+                      text = etext, hoverinfo='text')
 axis=dict(showbackground=False, showline=False, zeroline=False, showgrid=False, showticklabels=False, title='')
 
 layout = go.Layout(
