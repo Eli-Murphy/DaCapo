@@ -1,4 +1,4 @@
-﻿#node1,node2,node1_string_id,node2_string_id,neighborhood_on_chromosome,gene_fusion,phylogenetic_cooccurrence,homology,coexpression,experimentally_determined_interaction,database_annotated,automated_textmining,combined_score
+﻿Source,Target,node1_string_id,node2_string_id,neighborhood_on_chromosome,gene_fusion,phylogenetic_cooccurrence,homology,coexpression,experimentally_determined_interaction,database_annotated,automated_textmining,combined_score
 RAB7A,SNX3,9606.ENSP00000265062,9606.ENSP00000230085,0,0,0,0,0.089,0.316,0,0.851,0.899
 RAB7A,SNX1,9606.ENSP00000265062,9606.ENSP00000261889,0,0,0,0,0.064,0.368,0,0.804,0.874
 RAB7A,TBC1D5,9606.ENSP00000265062,9606.ENSP00000402935,0,0,0,0,0.065,0.166,0,0.732,0.773
