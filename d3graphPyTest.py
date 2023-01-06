@@ -1,7 +1,7 @@
 from d3graph import d3graph, vec2adjmat
 
 
-with open(r"C:\Users\elija\Documents\GitHub\DaCapo\PARK17 Interactions.csv", "r") as csv:
+with open(r"C:\Users\elija\Documents\GitHub\DaCapo\PARK17.csv", "r") as csv:
     next(csv)
     data = csv.readlines()
     #data = list(csv.reader(csv, delimiter=","))
@@ -43,7 +43,7 @@ adjmat = vec2adjmat(source, target, weight=weight)
 
 # Initialize
 # Initialize
-d3 = d3graph(charge=1000, collision=1)
+d3 = d3graph(charge=1000, collision=3)
 d3.graph(adjmat)
 d3.set_edge_properties(directed=True, edge_distance=200, scaler='zscore')
 
