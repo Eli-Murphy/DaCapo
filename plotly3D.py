@@ -1,3 +1,13 @@
+"""
+Dash Cytoscape Network visualization tool
+
+DaCapo Brainscience, Inc.
+
+Created by Eli Murphy
+
+January, 2023
+"""
+
 import json
 from urllib.request import urlopen
 import requests
