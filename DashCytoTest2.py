@@ -1,19 +1,28 @@
+"""
+DaCapo Brainscience, Inc.
+
+Dash Cytoscape Network visualization tool
+
+Created by Eli Murphy
+
+01/06/2023
+"""
+
 from dash import Dash, html, Input, Output
 import dash_cytoscape as cyto
 import os
 
 cyto.load_extra_layouts()
 
-for x in os.listdir(r"C:\Users\elija\Documents\GitHub\DaCapo"):
+for x in os.listdir(r"C:\Users\elija\Documents\GitHub\dcb-network"):
     if x.endswith(".csv"):
         print(x)
 
-fdir = r"C:\Users\elija\Documents\GitHub\DaCapo"
+fdir = r"C:\Users\elija\Documents\GitHub\dcb-network\datasets"
 fname = "PARK17.csv"
 
 file = str(os.path.join(fdir, fname))
 
-file2 = r"C:\Users\elija\Documents\GitHub\DaCapo\PARK17.csv"
 
 print(file)
 
@@ -43,7 +52,7 @@ with open(file, "r") as csv:
     for e in range(len(data)):
         temp = {}
         row = data[e].split(",")
-        temp['data'] = {'source': row[0], 'target': row[1], 'weight': row[12]}
+        temp['data'] = {'source': row[0], 'target': row[1], 'weight': row[12]} #Changed for ppi_0.3_subset.csv
         protienData.append(temp)
         ecount += 1
         weightAdd += float(row[12])
