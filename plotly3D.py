@@ -1,5 +1,5 @@
 """
-Dash Cytoscape Network visualization tool
+Plotly3D Network Graph Generator
 
 DaCapo Brainscience, Inc.
 
