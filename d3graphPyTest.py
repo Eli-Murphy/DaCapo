@@ -1,3 +1,12 @@
+'''
+D3Graph Generator
+
+DaCapo Brainscience
+
+Created by Eli Murphy
+
+January, 2023
+'''
 from d3graph import d3graph, vec2adjmat
 
 
