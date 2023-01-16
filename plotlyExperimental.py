@@ -1,3 +1,13 @@
+"""
+Dash Cytoscape Network Visualization Tool
+
+DaCapo Brainscience, Inc.
+
+Created by Eli Murphy
+
+January, 2023
+"""
+
 import csv
 from xml.dom.minicompat import NodeList
 import networkx as nx
