@@ -1,3 +1,13 @@
+'''
+Betweenness Centrality Graph Generator
+
+DaCapo Brainscience
+
+Created by Eli Murphy
+
+January, 2023
+'''
+
 import networkx as nx
 import matplotlib.pyplot as plt
 from pathlib import Path
@@ -5,7 +15,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 G = nx.Graph()
 
-csvpath = r"C:\Users\elija\Documents\GitHub\dcb-network\datasets\ppi_0.3_subset.csv"
+csvpath = r"C:\Users\elija\Documents\GitHub\dcb-network\datasets\ppi_0.3_subset.csv" #DEAD PATH
 
 filename = Path(csvpath).stem
 
@@ -18,15 +28,6 @@ with open(csvpath, "r") as csv:
         splitRow[2] = splitRow[2].replace("\n", "")
         edgelist.append((splitRow[0], splitRow[1], float(splitRow[2])))
 G.add_weighted_edges_from(edgelist)
-
-# remove randomly selected nodes (to make example fast)
-# num_to_remove = int(len(G) / 1.5)
-# nodes = sample(list(G.nodes), num_to_remove)
-# G.remove_nodes_from(nodes)
-
-# remove low-degree nodes
-# low_degree = [n for n, d in G.degree() if d < 10]
-# G.remove_nodes_from(low_degree)
 
 # largest connected component
 components = nx.connected_components(G)
