@@ -6,7 +6,6 @@
 * [How To Use](#how-to-use)
 * [Bug Notes](#bug-notes)
 * [Contact](#contact)
-* [Copyright](#Copyright)
 
 ## General Info
 
@@ -49,14 +48,10 @@ pip install dash-cytoscape
 ```
 pip install dash
 ```
-### How to start playing
-1. Run ```battleship.py```
-2. Follow prompts given
-3. Enjoy!
 
 
 ## Bug Notes
-No Known Bugs as of April 8th, 2022
+No Known Bugs as of January 2023
 ## Contact
 
 Please contact me at...
