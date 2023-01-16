@@ -1,6 +1,11 @@
 """
-DaCapo Brainscience 
+Excel Network Statistics Generator Tool
+
+DaCapo Brainscience, Inc.
+
 Created by Eli Murphy
+
+January, 2023
 """
 
 import networkx as nx
