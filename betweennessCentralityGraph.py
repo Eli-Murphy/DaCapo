@@ -11,7 +11,6 @@ January, 2023
 import networkx as nx
 import matplotlib.pyplot as plt
 from pathlib import Path
-from matplotlib.backends.backend_pdf import PdfPages
 
 G = nx.Graph()
 
